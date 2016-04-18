@@ -15,7 +15,6 @@ Danh sách chức năng **bắt buộc**:
 * [ ] Đăng ký tài khoản bằng email, password, và tên.
 * [ ] Đăng nhập bằng user và password.
 * [ ] Đăng xuất tài khoản.
-* [ ] Người dùng tìm kiếm bài đăng trên nút "tìm kiếm".
 * [ ] Nhấn nút "Tạo bài đăng" dẫn người dùng đến giao diện tạo bài đăng. Chỉ có là thành viên mới được đăng bài.
 * [ ] Nhấn nút "Chỉnh sửa" trên bài đăng dẫn đến giao diện chỉnh sửa.
 * [ ] Tài khoản Quản trị viên sẽ xuất hiện nút "danh sách thành viên". Nhấn vào đó xem thông tin các thành viên và có thể xoá thông tin đó
