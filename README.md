@@ -1,12 +1,18 @@
 # Đồ án - *TravelForum*
 
-**TravelForum*** là đồ án môn UDPT.
+**TravelForum** là đồ án môn UDPT.
 
-Thành viên: **Nguyễn Chí Tâm - 1312507
-            Thông Thị Thanh Hằng - 1312178
-			Phan Huỳnh Diệp Trúc - 1112508**
+Thành viên: 
+	**Nguyễn Chí Tâm - 1312507
+        Thông Thị Thanh Hằng - 1312178
+	Phan Huỳnh Diệp Trúc - 1112508**
 
 URL: **Insert your Heroku URL here**
+
+## Mô tả
+
+website nhằm mục đích chia sẽ kinh nghiệm khi đi du lịch tự túc và giới thiệu các địa điểm du lịch trên đất nước VN, bên cạnh đó, thành viên có thể chia sẻ kinh nghiệm, tìm kiếm bạn đồng hành cho những chặng đường mới
+
 
 ## Chức năng
 
