@@ -4,7 +4,6 @@ var express = require ('express'),
 
 var app = express();
 
-app.configure(function(req, res){});
 app.set('port', (process.env.PORT || 8080));
 app.set('views', __dirname + 'views');
 app.set('view engine', 'html');
