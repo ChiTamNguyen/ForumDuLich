@@ -7,7 +7,7 @@ Thành viên:
         Thông Thị Thanh Hằng - 1312178
 	Phan Huỳnh Diệp Trúc - 1112508**
 
-URL: https://git.heroku.com/forumdulich.git
+URL: https://dulich.herokuapp.com/
 
 ## Mô tả
 
