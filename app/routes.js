@@ -2,7 +2,7 @@ var User = require('../app/models/user');
 
 module.exports = function(app, passport) {
 	app.get('/', function(req, res) {
-		res.render('index.html');
+		res.render('home.html');
 	});
 	app.get('/login', function(req, res) {
 		res.render('login.html', { message: req.flash('error') });
