@@ -29,10 +29,11 @@
   transition: opacity 0.4s 0.2s;
   margin: 0 auto;
   z-index: 2;
+  background-image: url(../img/anhbia21.jpeg)
 }
 .page {
   width: 36vw;
-  height: 27vw;
+  height: 29vw;
   background-colour: #fff;
   float: left;
   margin-bottom: 0.5em;
@@ -192,68 +193,68 @@ html {
   background-position: right top;
 }
 .page:nth-child(1) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_cover_f.jpg');
+  background-image: url('../img/Mien_bac/Ho_TienSa_BaVi.jpg');
 }
 .page:nth-child(2),
 .page:nth-child(3) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_end_01.jpg');
+  background-image: url('../img/Mien_bac/anh2.jpg');
 }
 .page:nth-child(4),
 .page:nth-child(5) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00000.jpg');
+  background-image: url('../img/Mien_bac/anh3.jpg');
 }
 .page:nth-child(6),
 .page:nth-child(7) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00001.jpg');
+  background-image: url('../img/Mien_bac/anh4.jpg');
 }
 .page:nth-child(8),
 .page:nth-child(9) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00002.jpg');
+  background-image: url('../img/Mien_bac/anh5.jpg');
 }
 .page:nth-child(10),
 .page:nth-child(11) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00003.jpg');
+  background-image: url('../img/Mien_bac/anh6.jpg');
 }
 .page:nth-child(12),
 .page:nth-child(13) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00004.jpg');
+  background-image: url('../img/Mien_bac/anh7.jpg');
 }
 .page:nth-child(14),
 .page:nth-child(15) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00005.jpg');
+  background-image: url('../img/Mien_bac/anh8.jpg');
 }
 .page:nth-child(16),
 .page:nth-child(17) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00006.jpg');
+  background-image: url('../img/MienNam/an-giang1.jpg');
 }
 .page:nth-child(18),
 .page:nth-child(19) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00007.jpg');
+  background-image: url('../img/MienNam/SuoiMo_DongNai.jpg');
 }
 .page:nth-child(20),
 .page:nth-child(21) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00008.jpg');
+  background-image: url('../img/MienTrung/MyKhe.jpg');
 }
 .page:nth-child(22),
 .page:nth-child(23) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00009.jpg');
+  background-image: url('../img/MienTrung/anh1.jpg');
 }
 .page:nth-child(24),
 .page:nth-child(25) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00010.jpg');
+  background-image: url('../img/MienTrung/anh2.jpg');
 }
 .page:nth-child(26),
 .page:nth-child(27) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00011.jpg');
+  background-image: url('../img/MienTrung/anh3.jpg');
 }
 .page:nth-child(28),
 .page:nth-child(29) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_spread_00012.jpg');
+  background-image: url('../img/MienTrung/anh4.jpg');
 }
 .page:nth-child(30),
 .page:nth-child(31) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_end_02.jpg');
+  background-image: url('../img/MienTrung/anh5.jpg');
 }
 .page:nth-child(32) {
-  background-image: url('http://jasonhibbs.co.uk/wp-content/uploads/2015/02/bh_cover_b.jpg');
+  background-image: url('../img/theme5.jpg');
 }

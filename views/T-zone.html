@@ -47,6 +47,11 @@
 				});
 			});
 		</script>
+
+		<!-- map -->
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="js/B-map.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/map.css">
 	</head>
 	<body>
 		<aside>
@@ -118,19 +123,19 @@
 			        </div>
 		    	</div> <!-- end sách ảnh -->
 				
-				<div class="row" id="map">
-					<p>...</p>
+				<div class="row" id="ggMap">
+					<button type="button" id="map">Map</button>
+					<div id="googleMap" style="width:100% ;height:500px"></div>
 				</div>
 				
-				<!--phần hình ảnh-->
 				<div class="row">
-
 					<div class="portfolio-wrapper">
 					    <div>
 					        <div class="portfolio creek-masonry-750 col-3 gutter">
 				                <div class="post-1533 type-portfolio status-publish has-post-thumbnail hentry portfolio-tag-media portfolio-item">
 				                    <a href="#" class="thumb">
-				                        <img width="750" height="469" src="http://creek.themebucket.net/wp-content/uploads/2015/09/1.jpg" class="attachment-creek-masonry-750 wp-post-image" alt="1" />                            <div class="portfolio-hover">
+				                        <img width="750" height="469" src="img/MienTrung/MyKhe.jpg" alt="1" />                    
+				                        <div class="portfolio-hover">
 				                            <div class="portfolio-description">
 				                                <h4>Elegant Chair</h4>
 				                                <div>
@@ -144,7 +149,7 @@
 					            
 				                <div class="post-1532 type-portfolio status-publish has-post-thumbnail hentry portfolio-tag-web portfolio-item">
 				                    <a href="#" class="thumb">
-				                        <img width="750" height="938" src="http://creek.themebucket.net/wp-content/uploads/2015/09/5.jpg" class="attachment-creek-masonry-750 wp-post-image" alt="5" />                            
+				                        <img width="750" height="938" src="img/slide1.jpg" alt="5" />                            
 				                        <div class="portfolio-hover">
 				                            <div class="portfolio-description">
 				                                <h4>Portfolio Variation</h4>
@@ -159,7 +164,7 @@
 					            
 				                <div class="post-1531 type-portfolio status-publish has-post-thumbnail hentry portfolio-tag-media portfolio-tag-web portfolio-item">
 				                    <a href="#" class="thumb">
-				                        <img width="750" height="563" src="http://creek.themebucket.net/wp-content/uploads/2015/09/08b.jpg" class="attachment-creek-masonry-750 wp-post-image" alt="08b" />                            <div class="portfolio-hover">
+				                        <img width="750" height="563" src="img/MienTrung/BinhBa.jpg" alt="08b" />                            <div class="portfolio-hover">
 				                            <div class="portfolio-description">
 				                                <h4>Simple Variation</h4>
 				                                <div>
@@ -173,7 +178,7 @@
 					            
 				                <div class="post-1445 type-portfolio status-publish has-post-thumbnail hentry portfolio-tag-crafts portfolio-tag-illustration portfolio-tag-media portfolio-item">
 				                    <a href="#" class="thumb">
-				                        <img width="750" height="469" src="http://creek.themebucket.net/wp-content/uploads/2015/09/09.jpg" class="attachment-creek-masonry-750 wp-post-image" alt="09" />                            <div class="portfolio-hover">
+				                        <img width="750" height="469" src="img/MienTrung/anh5.jpg" alt="09" />                            <div class="portfolio-hover">
 				                            <div class="portfolio-description">
 				                                <h4>Easy to Customize</h4>
 				                                <div>
@@ -187,7 +192,7 @@
 					            
 				                <div class="post-1444 type-portfolio status-publish has-post-thumbnail hentry portfolio-item">
 				                    <a href="#" class="thumb">
-				                        <img width="750" height="938" src="http://creek.themebucket.net/wp-content/uploads/2015/09/7.jpg" class="attachment-creek-masonry-750 wp-post-image" alt="7" />                            <div class="portfolio-hover">
+				                        <img width="750" height="938" src="img/MienTrung/anh3.jpg" alt="7" />                            <div class="portfolio-hover">
 				                            <div class="portfolio-description">
 				                                <h4>Amazing Blog</h4>
 				                                <div>
@@ -197,25 +202,22 @@
 				                        </div>
 				                    </a>
 				                </div>
-
 					            
-				                <div class="post-1442 type-portfolio status-publish has-post-thumbnail hentry portfolio-tag-creative portfolio-tag-web portfolio-item">
+				               	 <div class="post-1440 type-portfolio status-publish has-post-thumbnail hentry portfolio-tag-web portfolio-item">
 				                    <a href="#" class="thumb">
-				                        <img width="750" height="469" src="http://creek.themebucket.net/wp-content/uploads/2015/09/9.jpg" class="attachment-creek-masonry-750 wp-post-image" alt="9" />                            <div class="portfolio-hover">
+				                        <img width="750" height="469" src="img/MienTrung/anh6.jpg" alt="6" />                            <div class="portfolio-hover">
 				                            <div class="portfolio-description">
-				                                <h4>Bootstrap 3+</h4>
+				                                <h4>Clean Code</h4>
 				                                <div>
-				                                	<p>Bootstrap is a free and open-source collection of tools for creating websites and web applications. &#8230;</p>
+				                                	<p>Many computer programs remain in use for far longer than the original authors ever envisaged &#8230;</p>
 												</div>
 				                            </div>
 				                        </div>
 				                    </a>
-				                </div>
-
-					            
-				                <div class="post-1441 type-portfolio status-publish has-post-thumbnail hentry portfolio-tag-web portfolio-item">
+				                </div>	     
+								 <div class="post-1441 type-portfolio status-publish has-post-thumbnail hentry portfolio-tag-web portfolio-item">
 				                    <a href="#" class="thumb">
-				                        <img width="750" height="563" src="http://creek.themebucket.net/wp-content/uploads/2015/09/07c.jpg" class="attachment-creek-masonry-750 wp-post-image" alt="07c" />                            <div class="portfolio-hover">
+				                        <img width="750" height="563" src="img/MienTrung/Hue.jpg" alt="07c" />                            <div class="portfolio-hover">
 				                            <div class="portfolio-description">
 				                                <h4>Full Responsive</h4>
 				                                <div>
@@ -225,11 +227,11 @@
 				                        </div>
 				                    </a>
 				                </div>
-
 					            
 				                <div class="post-1440 type-portfolio status-publish has-post-thumbnail hentry portfolio-tag-web portfolio-item">
 				                    <a href="#" class="thumb">
-				                        <img width="750" height="469" src="http://creek.themebucket.net/wp-content/uploads/2015/09/6.jpg" class="attachment-creek-masonry-750 wp-post-image" alt="6" />                            <div class="portfolio-hover">
+				                        <img width="750" height="469" src="img/MienTrung/pThiet2.jpg" alt="6" />                       
+				                        <div class="portfolio-hover">
 				                            <div class="portfolio-description">
 				                                <h4>Clean Code</h4>
 				                                <div>
@@ -238,7 +240,23 @@
 				                            </div>
 				                        </div>
 				                    </a>
-				                </div>	            
+				                </div>	 
+
+				               
+				                 <div class="post-1440 type-portfolio status-publish has-post-thumbnail hentry portfolio-tag-web portfolio-item">
+				                    <a href="#" class="thumb">
+				                        <img width="750" height="469" src="img/MienTrung/bandaosontra10_zing.jpg" alt="6" />                            <div class="portfolio-hover">
+				                            <div class="portfolio-description">
+				                                <h4>Clean Code</h4>
+				                                <div>
+				                                	<p>Many computer programs remain in use for far longer than the original authors ever envisaged &#8230;</p>
+												</div>
+				                            </div>
+				                        </div>
+				                    </a>
+				                </div>	  
+				              	     
+				                               
 					        </div>    
 					    </div>
 					</div>
