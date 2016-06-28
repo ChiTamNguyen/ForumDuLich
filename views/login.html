@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Node Authentication</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- load bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> <!-- load fontawesome -->
     <style>
@@ -16,9 +16,9 @@
     <h1><span class="fa fa-sign-in"></span> Login</h1>
 
     <!-- show any messages that come back with authentication -->
-    <% if (message.length > 0) { %>
+    <!-- <% if (message.length > 0) { %> -->
 		<div class="alert alert-message"><%= message %></div>
-	<% } %>
+	<!-- <% } %> -->
 
     <!-- LOGIN FORM -->
     <form action="/login" method="post">

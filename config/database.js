@@ -1,3 +1,3 @@
 module.exports = {
-	'url' : 'mongodb://localhost/ChiTamNguyen'
+	'url' : 'mongodb://ginta12006:ginta12000@ds023684.mlab.com:23684/forumtravel'
 };
