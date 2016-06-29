@@ -6,12 +6,32 @@ module.exports = function(app, passport) {
 			user : req.user
 		});
 	});
+	app.get('/lienhe', function(req, res) {
+		res.render('lienhe.html' , {
+			user : req.user
+		});
+	});
+	app.get('/B-zone', function(req, res) {
+		res.render('B-zone.html' , {
+			user : req.user
+		});
+	});
+	app.get('/T-zone', function(req, res) {
+		res.render('T-zone.html' , {
+			user : req.user
+		});
+	});
+	app.get('/N-zone', function(req, res) {
+		res.render('N-zone.html' , {
+			user : req.user
+		});
+	});
 	app.get('/login', function(req, res) {
 		res.render('login.html', { message: req.flash('error') });
 	});
 
 	app.post('/login', passport.authenticate('login', {
-		successRedirect : '/home',
+		successRedirect : '/',
 		failureRedirect : '/login',
 		failureFlash : true
 	}));
@@ -21,7 +41,7 @@ module.exports = function(app, passport) {
 	});
 
 	app.post('/signup', passport.authenticate('signup', {
-		successRedirect : '/home',
+		successRedirect : '/',
 		failureRedirect : '/signup',
 		failureFlash : true
 	}))
@@ -31,8 +51,28 @@ module.exports = function(app, passport) {
         res.redirect('/');
     });
 
-    app.get('/home', isLoggedIn, function(req, res) {
+    app.get('/', isLoggedIn, function(req, res) {
         res.render('home.html', {
+            user : req.user
+        });
+    });
+	app.get('/lienhe', isLoggedIn, function(req, res) {
+        res.render('lienhe.html', {
+            user : req.user
+        });
+    });
+    app.get('/B-zone', isLoggedIn, function(req, res) {
+        res.render('B-zone.html', {
+            user : req.user
+        });
+    });
+    app.get('/N-zone', isLoggedIn, function(req, res) {
+        res.render('N-zone.html', {
+            user : req.user
+        });
+    });
+    app.get('/T-zone', isLoggedIn, function(req, res) {
+        res.render('T-zone.html', {
             user : req.user
         });
     });
