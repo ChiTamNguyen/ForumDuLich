@@ -44,7 +44,20 @@ Danh sách chức năng **phụ**:
  <h4>3. Demo (gif).</h4>
 ![Video Walkthrough](demo.gif)
 
-<h4>4. Chuẩn đầu ra.</h4>
+<h4>4. Tìm hiểu công nghệ. </h4>
+- Xử lý:
+ + Nhận một Request từ Client.
+ + Parse thông tin nhập vào từ Client.
+ + Thực hiện quá trình xử lý dữ liệu cần thiết.
+ + Cuối cùng, gửi kết quả trả về tới Client.
+- Lý do lựa chọn Ajax:
+ + Ta được biết quy trình gửi request và nhận response giữa trình duyệt (client) và server. Thông thường, khi duyệt đến địa chỉ một trang web, trình duyệt sẽ gửi một request đến địa chỉ đó. Khi phía server nhận được request này, nó sẽ trả về một response để trình duyệt hiển thị ra màn hình. Response thường là mã HTML mà trình duyệt có thể hiểu và thông dịch thành các thành phần trên trang web.
+ + Nếu muốn thay đổi một phần tử trên trang web, tôi phải gửi một request mới đến server và nó sẽ trả về response với toàn bộ nội dung của trang bao gồm phần tử mà tôi muốn cập nhật nội dung mới. Như vậy, trình duyệt phải tải lại cả trang, trong khi tôi chỉ muốn cập nhật một phần tử duy nhất.
+ => Ajax giúp khắc phục nhược điểm này. Thay vì phải tải lại trang để cập nhật một phần tử HTML, ta chỉ tải nội dung cần được cập nhật mà thôi.
+ + Ajax không phải là công nghệ mới mà là sự kết hợp giữa nhiều công nghệ cũ, trong đó bao gồm JavaScript và XML. Điều này được phản ánh trong cái tên của nó: Asynchronous JavaScript and XML.
+
+
+<h4>5. Chuẩn đầu ra.</h4>
 
 Chuẩn đầu ra | Đã đạt | Mô tả
 -------------|--------|-------
@@ -59,8 +72,7 @@ G7.1|Không đạt | Không sử dụng
 G8.1| Không đạt | Không sử dụng
 G8.3|Đạt | CSS framework: bootstrap, foundation,...
 
-
-
+ 
 ## License
 
     Copyright [yyyy] [name of copyright owner]
