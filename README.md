@@ -22,17 +22,17 @@ Danh sách chức năng **bắt buộc**:
 * [*] Đăng nhập bằng user và password hoặc đăng nhập bằng tài khoản FaceBook.
 * [*] Đăng xuất tài khoản.
 Danh sách chức năng **phụ**:
-<h3>I. Nội dung: </h3>
+<h3> Nội dung: </h3>
 <h4>1. WireFrame</h4>
 *Mô tả hướng xử lý luồng giữa các màn hình.*
 
-![ScreenShot](SoDo.PNG)
+![ScreenShot](SoDo.png)
 <h4>2. Data schema.</h4>
 - Data lưu trữ tại mLab.com.
 - Dữ liệu người dùng:
-![ScreenShot](data.jpg)
+![ScreenShot](data.png)
 - Dữ liệu chi tiết:
-!ScreenShot](Minhhoa.jpg)
+![ScreenShot](Minhhoa.png)
 - Dữ liệu gồm các thuộc tính:
  + email: email của người dùng, dùng trong các trường hợp thông báo, thông tin khi có sự cố xảy ra.
  + password đã được mã hóa.
@@ -43,6 +43,7 @@ Danh sách chức năng **phụ**:
  <h4>3. Demo (gif).</h4>
 
 Chuẩn đầu ra | Đã đạt | Mô tả
+-------------|--------|----------
 G1.2 | Đạt |Sử dụng Git theo Feature Branch Workflow
 G3.1 | Đạt|Giải thích được các xử lý
 G5.1| Đạt|Thiết kế responsive
