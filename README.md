@@ -11,7 +11,7 @@ URL: https://dulich.herokuapp.com
 
 ## Mô tả
 
-* Website nhằm mục đích chia sẻ kinh nghiệm khi đi du lịch tự túc và giới thiệu các địa điểm du lịch trên đất nước VN, bên cạnh đó, thành viên có thể chia sẻ kinh nghiệm, tìm kiếm bạn đồng hành cho những chặng đường mới
+* Website nhằm mục đích chia sẻ kinh nghiệm khi đi du lịch tự túc và giới thiệu các địa điểm du lịch trên mọi miền đất nước, bên cạnh đó, thành viên có thể chia sẻ kinh nghiệm, tìm kiếm bạn đồng hành cho những chặng đường mới.
 
 
 ## Chức năng
@@ -43,19 +43,20 @@ Danh sách chức năng **phụ**:
  + name:Họ tên của người dùng.
  <h4>3. Demo (gif).</h4>
 ![Video Walkthrough](demo.gif)
+
 <h4>4. Chuẩn đầu ra.</h4>
-<br/>
+
 Chuẩn đầu ra | Đã đạt | Mô tả
--------------|--------|----------
+-------------|--------|-------
 G1.2 | Đạt |Sử dụng Git theo Feature Branch Workflow
 G3.1 | Đạt|Giải thích được các xử lý
 G5.1| Đạt|Thiết kế responsive
 G5.2| Đạt| Lập trình JS với animation Sử dụng MVC và module
 G5.3 & G5.5|Đạt | Sử dụng decorators để tách một số xử lý liên quan giao diện khỏi model
-G5.4| Không đạt|
-G6.1 & G6.2|Không đạt |
-G7.1|Không đạt |
-G8.1| Không đạt |
+G5.4| Không đạt| Không sử dụng
+G6.1 & G6.2|Không đạt | Không sử dụng
+G7.1|Không đạt | Không sử dụng
+G8.1| Không đạt | Không sử dụng
 G8.3|Đạt | CSS framework: bootstrap, foundation,...
 
 
