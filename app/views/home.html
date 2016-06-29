@@ -50,21 +50,21 @@
 		 
 			<div id="row1" class="row"><!--slideshow-->
 				<div id="slide1"class="large-4 columns">
-					<img src="img/slide9.jpg">
-					<img src="img/slide9.jpg">
-					<img src="img/slide9.jpg">
+					<img src="img/Mien_bac/CaoBang.jpg">
+					<img src="img/MienTrung/ban-dao-sontra21.jpg">
+					<img src="img/MienNam/an-giang.jpg">
 				</div>
 				<div class="large-8 columns">
 					<div class="row">
 						<div id="slide2"class="large-6 columns">
-							<img src="img/slide11.jpg"/>
-							<img src="img/slide9.jpg">
-							<img src="img/slide9.jpg">
+							<img src="img/Mien_bac/Ho_Ba_Be.jpg"/>
+							<img src="img/MienTrung/BinhBa.jpg">
+							<img src="img/MienNam/DaoNamDu.jpg">
 						</div>
 						<div id="slide3"class="large-6 columns">
-							<img src="img/slide12.jpg"/>
-							<img src="img/slide9.jpg">
-							<img src="img/slide9.jpg">
+							<img src="img/Mien_bac/maichauhoabinh.jpg"/>
+							<img src="img/MienTrung/LangCo.jpg">
+							<img src="img/MienNam/SuoiMo_DongNai.jpg">
 						<!--<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>-->
 						</div>
 					</div>
@@ -79,9 +79,9 @@
 
 				</div>
 				<div id="slideshowHolder" class="large-4 columns">
-				   <img src='img/img1.jpg' alt='img1' />
-				   <img src='img/img2.jpg' alt='img2' />
-				   <img src='img/img3.jpg' alt='img3' />
+				   <img src='img/Mien_bac/wvOtXyw.jpg' />
+				   <img src='img/MienTrung/pt4.jpg' />
+				   <img src='img/MienNam/NgocHien.jpg' />
 				</div>
 			</div><!--end bài 1-->
 
@@ -153,7 +153,14 @@
 			        <a href="home.html">Trang chủ</a>
 			        <a href="#">Forum</a>
 			        <a href="lienhe.html">Liên hệ</a>
-			        <a href="#">Đăng nhập</a>
+			        <a href="/login" id="login">Đăng nhập</a>
+			        <% if (user) { %>
+						<script> 
+							document.getElementById('login').innerHTML = "Đăng xuất";
+							document.getElementById('login').href = "/logout";
+						</script>
+						<a href="#"><%= user.local.username %></a>
+					<% } %>
 			      </p>
 			      <p class="copywrite">Copyright &copy; KyoeraFox 2016</p>
 			    </div>
