@@ -68,7 +68,7 @@
 				      <li><a href="/login" id="login2">Đăng nhập</a></li>
 				      <% if (user) { %>
 						<script> 
-							document.getElementById('login2').innerHTML = "<%= user.local.username %>";
+							document.getElementById('login2').innerHTML = "<%= user.local.username || user.facebook.email %>";
 							document.getElementById('login2').href = "/#";
 						</script>
 				      <% } %>
@@ -89,7 +89,7 @@
 										document.getElementById('login1').innerHTML = "Đăng xuất";
 										document.getElementById('login1').href = "/logout";
 									</script>
-									<a href="#"><%= user.local.username %></a>
+									<a href="#"><%= user.local.username || user.facebook.email %></a>
 								<% } %>
 						  	</ul>
 					</nav>

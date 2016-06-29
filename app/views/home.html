@@ -34,7 +34,7 @@
 				      <li><a href="/login" id="login1">Đăng nhập</a></li>
 			          <% if (user) { %>
 						<script> 
-							document.getElementById('login1').innerHTML = "<%= user.local.username %>";
+							document.getElementById('login1').innerHTML = "<%= user.local.username || user.facebook.email %>";
 							document.getElementById('login1').href = "/#";
 						</script>
 				      <% } %>
@@ -57,7 +57,7 @@
 							document.getElementById('login2').innerHTML = "Đăng xuất";
 							document.getElementById('login2').href = "/logout";
 						</script>
-				      	<li><a href="#"><%= user.local.username %></a></li>
+				      	<li><a href="#"><%= user.local.username || user.facebook.email %></a></li>
 				    <% } %>
 			  	</ul>
 			</header><!--end header-->
@@ -174,7 +174,7 @@
 							document.getElementById('login').innerHTML = "Đăng xuất";
 							document.getElementById('login').href = "/logout";
 						</script>
-						<a href="#"><%= user.local.username %></a>
+						<a href="#"><%= user.local.username || user.facebook.email %></a>
 					<% } %>
 			      </p>
 			      <p class="copywrite">Copyright &copy; KyoeraFox 2016</p>
