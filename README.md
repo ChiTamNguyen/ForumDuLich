@@ -18,9 +18,10 @@ URL: https://dulich.herokuapp.com
 
 Danh sách chức năng **bắt buộc**:
 
-* [*] Đăng ký tài khoản bằng accout name, password, tên, email, số điện thoại và địa chỉ.
-* [*] Đăng nhập bằng user và password hoặc đăng nhập bằng tài khoản FaceBook.
-* [*] Đăng xuất tài khoản.
+* [x] Đăng ký tài khoản bằng accout name, password, tên, email, số điện thoại và địa chỉ.
+* [x] Đăng nhập bằng user và password hoặc đăng nhập bằng tài khoản FaceBook.
+* [x] Đăng xuất tài khoản.
+ </br>
 Danh sách chức năng **phụ**:
 <h3> Nội dung: </h3>
 <h4>1. WireFrame</h4>
@@ -41,7 +42,8 @@ Danh sách chức năng **phụ**:
  + username: tài khoản mà người dùng đăng ký.
  + name:Họ tên của người dùng.
  <h4>3. Demo (gif).</h4>
-
+![Video Walkthrough](demo.gif)
+<h4>4. Chuẩn đầu ra.</h4>
 Chuẩn đầu ra | Đã đạt | Mô tả
 -------------|--------|----------
 G1.2 | Đạt |Sử dụng Git theo Feature Branch Workflow
