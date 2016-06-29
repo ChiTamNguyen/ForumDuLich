@@ -71,7 +71,7 @@ G5.3 & G5.5|Đạt | Sử dụng decorators để tách một số xử lý liê
 G5.4| Không đạt| Không sử dụng
 G6.1 & G6.2|Không đạt | Không sử dụng
 G7.1|Không đạt | Không sử dụng
-G8.1| Không đạt | Không sử dụng
+G8.1| Đạt | Sử dụng facebook API, google map API
 G8.3|Đạt | CSS framework: bootstrap, foundation,...
 
  
