@@ -71,7 +71,7 @@
 				      <% if (user) { %>
 						<script> 
 							document.getElementById('login2').innerHTML = "<%= user.local.username || user.facebook.email %>";
-							document.getElementById('login2').href = "/#";
+							document.getElementById('login2').href = "/profile";
 						</script>
 				      <% } %>
 				    </ul>
@@ -91,7 +91,7 @@
 										document.getElementById('login1').innerHTML = "Đăng xuất";
 										document.getElementById('login1').href = "/logout";
 									</script>
-									<a href="#"><%= user.local.username || user.facebook.email %></a>
+									<a href="/profile"><%= user.local.username || user.facebook.email %></a>
 								<% } %>
 						  	</ul>
 					</nav>

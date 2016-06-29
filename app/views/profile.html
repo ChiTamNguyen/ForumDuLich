@@ -21,10 +21,11 @@
 	<div>
 					<nav class="row">
 						  	<ul>
-							    <li><a href="home.html">Trang chủ</a></li>
-							    <li><a href="B-zone.html">Diễn đàn</a></li>
-							    <li><a href="lienhe.htm">Liên hệ</a></li>
-							    <li><a href="login.html">Đăng nhập</a></li>
+							    <li><a href="/">Trang chủ</a></li>
+							    <li><a href="/B-zone">Diễn đàn</a></li>
+							    <li><a href="/lienhe">Liên hệ</a></li>
+							    <li><a href="/logout">Đăng xuất</a></li>
+							    <li><a href="/profile"><%= user.local.username || user.facebook.email %></a></li>
 						  	</ul>
 					</nav>
 				</div>
@@ -39,7 +40,8 @@
 						
 					</div>
 				</div>
-				<h4>Ngan Nguyen</h4>
+				<h4><%= user.local.name || user.facebook.name %></h4>
+				<strong>Email: </strong><%= user.local.email || user.facebook.email %>
 				<p>Cuộc sống là vô vàn những điều khó khăn và vất vả đang chờ đợi ta phía trước. Nhưng có những người vượt qua những khó khăn đó tốt hơn rất nhiều người khác. </p>
 			</div>
 		</div>

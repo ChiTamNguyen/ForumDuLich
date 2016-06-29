@@ -96,7 +96,7 @@
 							document.getElementById('login').innerHTML = "Đăng xuất";
 							document.getElementById('login').href = "/logout";
 						</script>
-						<a href="#"><%= user.local.username || user.facebook.email %></a>
+						<a href="/profile"><%= user.local.username || user.facebook.email %></a>
 					<% } %>
 		      </p>
 		      <p class="copywrite">Copyright &copy; KyoeraFox 2016</p>

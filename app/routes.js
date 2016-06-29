@@ -21,6 +21,11 @@ module.exports = function(app, passport) {
 			user : req.user
 		});
 	});
+	app.get('/blog', function(req, res) {
+		res.render('Blog.html' , {
+			user : req.user
+		});
+	});
 	app.get('/N-zone', function(req, res) {
 		res.render('N-zone.html' , {
 			user : req.user
@@ -85,6 +90,17 @@ module.exports = function(app, passport) {
             user : req.user
         });
     });
+    app.get('/profile', isLoggedIn, function(req, res) {
+        res.render('profile.html', {
+            user : req.user
+        });
+    });
+    app.get('/blog', isLoggedIn, function(req, res) {
+        res.render('Blog.html', {
+            user : req.user
+        });
+    });
+};
 };
 
 function isLoggedIn(req, res, next) {
