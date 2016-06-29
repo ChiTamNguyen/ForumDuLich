@@ -14,7 +14,7 @@ module.exports = function(passport) {
 	});
 
 	passport.use('login', new LocalStrategy({
-		usernameFiedl : 'username',
+		usernameField : 'username',
 		passReqToCallback : true
 	},
 	function(req, username, password, done) {
@@ -35,7 +35,7 @@ module.exports = function(passport) {
 	}));
 
 	passport.use('signup', new LocalStrategy({
-		usernameFiedl : 'username',
+		usernameField : 'username',
 		passReqToCallback : true
 	},
 	function(req, username, password, done) {
@@ -46,7 +46,10 @@ module.exports = function(passport) {
 						return done(err);
 					}
 					if (user) {
-						return done(null, false, req.flash('signuperror', 'Username đã tồn tại'));	
+						return done(null, false, req.flash('signuperror', 'Username đã tồn tại !!!'));	
+					}
+					if (req.body.password != req.body.cpassword) {
+						return done(null, false, req.flash('signuperror', 'Mật khẩu không khớp !!!'));
 					}
 					else {
 						var newUser = new User();
@@ -55,6 +58,7 @@ module.exports = function(passport) {
 						newUser.local.password = newUser.generateHash(password);
 						newUser.local.email = req.body.email;
 						newUser.local.address = req.body.address;
+						newUser.local.phone = req.body.phone;
 						newUser.save(function(err) {
 							if (err)
 								throw err;
@@ -70,6 +74,7 @@ module.exports = function(passport) {
 				user.local.password = user.generateHash(password);
 				user.local.email = req.body.email;
 				user.local.address = req.body.address;
+				user.local.phone = req.body.phone;
 				user.save(function(err) {
 					if (err)
 						throw err;

@@ -132,7 +132,7 @@ aside {
   left: -250px;
   background: #343434;
   font-size: .8em;
-  font-family: sans-serif;
+  font-family: Comic Sans MS, sans-serif;
   font-weight: 300;
   -webkit-transition: all .3s ease;
   -moz-transition : all .3s ease;
@@ -150,6 +150,9 @@ aside ul li a {
   display: block;
   color: #fff;
   text-decoration: none;
+  font-size: 15px;
+  font-family: Comic Sans MS, sans-serif;
+  font-weight: 300;
 }
 
 /* JavaScript toggle */
@@ -182,14 +185,14 @@ aside ul li a {
   margin-left: 2em; 
   /*display: block;*/
   padding: 15px 15px 15px 50px;
-  font-size: 12px;
+  font-size: 14px;
   color: #eee;
   border-bottom: 1px solid #222;
 }
 
 .action {
-    margin-left: 2em; 
-  box-shadow: inset 5px 0 0 #5b5, inset 6px 0 0 #222;
+  margin-left: 2em; 
+  box-shadow: inset 5px 0 0 #999, inset 6px 0 0 #222;
   background: #444;
 }
 

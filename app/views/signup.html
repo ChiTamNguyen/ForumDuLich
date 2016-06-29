@@ -1,60 +1,96 @@
-<!doctype html>
-<html>
-<head>
-    <title>Node Authentication</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- load bootstrap css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> <!-- load fontawesome -->
-    <style>
-        body        { padding-top:80px; }
-    </style>
-</head>
-<body>
-<div class="container">
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="col-sm-6 col-sm-offset-3">
+		<!-- Bootstrap -->
+		<link href="http://static.gateaz.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
-    <h1> Signup</h1>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+			
+		<!-- 1. CSS ở đây -->
+		<style>
+			body{
+			padding-top: 100px;
+			background: #DADAEB;
+			}
+			button {
+				margin-right: 1.5em;
+			}
 
-    <!-- show any messages that come back with authentication -->
-    <% if (message.length > 0) { %>
-        <div class="alert alert-message"><%= message %></div>
-    <% } %>
-
-
-    <!-- LOGIN FORM -->
-    <form action="/signup" method="post">
-        <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" placeholder="Nhap ten cua ban" name="name" required>
-        </div>
-        <div class="form-group">
-            <label>Username</label>
-            <input type="text" class="form-control" name="username" required>
-        </div>
-		<div class="form-group">
-            <label>Password</label>
-            <input type="password" class="form-control" name="password" required>
-        </div>
-        <div class="form-group">
-            <label>Email</label>
-            <input type="text" class="form-control" name="email" required>
-        </div>
-        <div class="form-group">
-            <label>Address</label>
-            <input type="text" class="form-control" name="address" required>
-        </div>
+		</style>
 		
-        <button type="submit">Signup</button>
-		<button type="submit"><a href="/">Cancel</a></button>
-    </form>
+	</head>
+	<body>
+		
+		<!-- 2. HTML ở đây -->
+		<div class="container">
+			<div class="row"  >
 
-    <hr>
+				<div class ="col-md-6 col-md-offset-3">
+					<h2><span class="glyphicon glyphicon-pencil" aria-hidden="true"> SIGN IN A ACCOUNT </span></h2>
+					<br>
 
-    <p>Already have an account? <a href="/login">Login</a></p>
-    <p>Or go <a href="/">home</a>.</p>
+					<% if (message.length > 0) { %>
+				        <div class="alert alert-message"><%= message %></div>
+				    <% } %>
+					<form action="/signup" method="post">
+					   <div class="form-group">
+					    <label >Account name</label>
+					    <input type="text" class="form-control" placeholder="Account name" name="username" required>
+					  </div>
+					  
+					  <div class="form-group">
+					    <label>Password</label>
+					    <input type="password" class="form-control" placeholder="Password" name="password" required>
+					  </div>
 
-</div>
+					  <div class="form-group">
+					    <label>Confirm Password</label>
+					    <input type="password" class="form-control" placeholder="Confirm Password" name="cpassword" required>
+					  </div>
+					  <div class="form-group">
+					    <label>Email address</label>
+					    <input type="email" class="form-control" placeholder="Email" name="email" required>
+					  </div>
+					  <div class="form-group">
+					    <label >Full name</label>
+					    <input type="text" class="form-control" placeholder="Full name" name="name" required>
+					  </div>
+					  <div class="form-group">
+					    <label >Phone number</label>
+					    <input type="text" class="form-control" placeholder="Phone number" name="phone" required>
+					  </div>
+					  <div class="form-group">
+					  	<label >Address</label>
+					    <textarea class="form-control" rows="3" placeholder="Address" name="address" required></textarea>
+					  </div>
+					  <div class="btn-group" role="group">
+					    <button type="submit" class="btn btn-primary">Sign up</button>
+					    <button type="submit" class="btn btn-primary"><a href="/" style="color: white; text-decoration:none">Cancel</a></button>
+					  </div>
+					</form>
+					<hr/>
 
-</div>
-</body>
+					  <br/>
+					  <p> Do you have account? <a href = "/login">Login</a></p>
+					  
+				</div> 
+			</div>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://static.gateaz.com/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://static.gateaz.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<!-- 3. JS ở đây -->
+			
+	</body>
 </html>
