@@ -59,14 +59,21 @@
 		    <div class='in-nav'>
 			    <div class="title">Sidebar</div>
 				    <ul>
-				      <li><a class="action" href="home.html">Trang chủ</a></li>
+				      <li><a class="action" href="/">Trang chủ</a></li>
 				      <li id="submenu"><a>Diễn đàn</a>
 					      <ul class="sub">
-			                <li><a href="B-zone.html">Miền Bắc</a></li>
-			                <li><a href="T-zone.html">Miền Trung</a></li>
-			                <li><a href="N-zone.html">Miền Nam</a></li>
+			                <li><a href="/B-zone">Miền Bắc</a></li>
+			                <li><a href="/T-zone">Miền Trung</a></li>
+			                <li><a href="/N-zone">Miền Nam</a></li>
 		              </ul></li>
-				      <li><a href="lienhe.html">Liên hệ</a></li>
+				      <li><a href="/lienhe">Liên hệ</a></li>
+				      <li><a href="/login" id="login2">Đăng nhập</a></li>
+				      <% if (user) { %>
+						<script> 
+							document.getElementById('login2').innerHTML = "<%= user.local.username %>";
+							document.getElementById('login2').href = "/#";
+						</script>
+				      <% } %>
 				    </ul>
 			  	</div>
 		</aside>
@@ -75,10 +82,17 @@
 				<div class="row">
 					<nav>
 						  	<ul>
-							    <li><a href="home.html">Trang chủ</a></li>
-							    <li><a href="B-zone.html">Diễn đàn</a></li>
-							    <li><a href="lienhe.html">Liên hệ</a></li>
-							    <li><a href="login.html">Đăng nhập</a></li>
+							    <li><a href="/">Trang chủ</a></li>
+							    <li><a href="/B-zone">Diễn đàn</a></li>
+							    <li><a href="/lienhe">Liên hệ</a></li>
+							    <li><a href="/login" id="login1">Đăng nhập</a></li>
+							    <% if (user) { %>
+									<script> 
+										document.getElementById('login1').innerHTML = "Đăng xuất";
+										document.getElementById('login1').href = "/logout";
+									</script>
+									<a href="#"><%= user.local.username %></a>
+								<% } %>
 						  	</ul>
 					</nav>
 				</div>
@@ -555,10 +569,16 @@
 					<div class="row">
 					    <div id= "menu_footer"class="small-12 columns">
 					      <p class="links">
-					        <a href="home.html">Trang chủ</a>
+					        <a href="/">Trang chủ</a>
 					        <a href="#">Forum</a>
-					        <a href="lienhe.html">Liên hệ</a>
-					        <a href="#">Đăng nhập</a>
+					        <a href="/lienhe">Liên hệ</a>
+					        <a href="/login" id="login">Đăng nhập</a>
+					        <% if (user) { %>
+								<script> 
+									document.getElementById('login').innerHTML = "Đăng xuất";
+									document.getElementById('login').href = "/logout";
+								</script>
+							<% } %>
 					      </p>
 					      <p class="copywrite">Copyright &copy; KyoeraFox 2016</p>
 					    </div>
